@@ -40,10 +40,10 @@ Ingen ändrar i den andras arbete utan tydlig kommunikation och diskussion förs
 
 ## Konflikthantering
 - Vi hanterar konflikter med tålamod, diskussion och förståelse. 
-- Man behöver kunna kompromissa och vid olösta konflikter kontaktas Jenni. 
+- Man behöver kunna kompromissa och vid olösta konflikter kontaktas Jenni.
 
 __________________________________________________________
 
 Dabbagam 📜✅
 [Lenita Dahlin](https://github.com/LDMI-24)
-
+[Malin Rosenquist](https://github.com/MalinRosenquist)
