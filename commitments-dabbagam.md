@@ -42,8 +42,43 @@ Ingen ändrar i den andras arbete utan tydlig kommunikation och diskussion förs
 - Vi hanterar konflikter med tålamod, diskussion och förståelse. 
 - Man behöver kunna kompromissa och vid olösta konflikter kontaktas Jenni.
 
+## Kodstandard
+
+- Vi använder Sass för styling
+- Vi använder oss av TypeScript
+- EsLint & Prettier
+    - Enkla citattecken i TypeScript
+    - Vi använder semicolon
+
+- Namnkonventioner
+    - camelCase i TypeScript
+    - kebab-case i HTML + Sass
+    - PascalCase för komponenter och sidor i Vue
+    - Beskrivande namn på allt 
+
+- Branches
+    - Vi har en Main & en Dev branch
+    - Branches skapas vid behov (feat/vad man jobbar på)
+    - Vi går igenom pull requests tillsammans
+    - Allt pushas till Dev först 
+    - Vi mergar in i Main efter hand när vi båda känner att saker fungerar väl.
+    - Tex; När header, länkning till de olika sidorna i header, samt hamburgermenyn, fungerar så mergar vi in det i main.
+
+- Commits
+    - Conventional commits (feat, chore, docs, fix, refactor, style)
+    - Vid parkodning används co-author
+    ```bash
+    git commit -m "Meddelande
+    >
+    >
+    Co-authored-by: Jane Doe <janedoe@users.noreply.github.com>"
+    ```
+
+    - Privata mailadresser ska användas vid co-author:
+        - 183497693+LDMI-24@users.noreply.github.com
+        - 183487075+MalinRosenquist@users.noreply.github.com
 __________________________________________________________
 
 Dabbagam 📜✅
-[Lenita Dahlin](https://github.com/LDMI-24)
-[Malin Rosenquist](https://github.com/MalinRosenquist)
+- [Lenita Dahlin](https://github.com/LDMI-24)
+- [Malin Rosenquist](https://github.com/MalinRosenquist)
