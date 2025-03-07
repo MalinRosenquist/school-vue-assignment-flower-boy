@@ -1,10 +1,14 @@
 @import 'variables';
 @import 'typography';
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
-  color: $font-tertiery;
+  color: black;
 }
 
 header {
-  background-color: $bg-dark-green;
+  
 }
