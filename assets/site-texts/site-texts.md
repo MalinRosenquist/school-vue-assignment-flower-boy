@@ -1,5 +1,9 @@
 ### General
 
+- **Primary:** (h1-h3) https://fonts.google.com/specimen/Rubik+Mono+One?query=Rubik+mono+one
+- **Secondary:** (h4-h6 + strong): Arial (black)
+- **Paragraph:** Arial (bold)
+
 ## Font Details - Dektop
 
 - **H1** 
