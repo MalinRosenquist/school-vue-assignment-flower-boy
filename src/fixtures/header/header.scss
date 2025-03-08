@@ -59,28 +59,28 @@ h2 { //TODO - Make sure the text changes depending on page
 /* ----`*~ TABLET ~*´----*/
 /* -----------------------*/
 @media screen and (min-width: 744px) {
-.burgermenu {
-  right: 80px;
-}
-h1 {
-  bottom: 20px;
-}
-h2 {
-  display: block;
-  top: 90px;
-  margin-left: 80px;
-}
+  .burgermenu {
+    right: 80px;
+  }
+  h1 {
+    bottom: 20px;
+  }
+  h2 {
+    display: block;
+    top: 90px;
+    margin-left: 80px;
+  }
 }
 
 /* -----------------------*/
 /* ----`*~ DESKTOP ~*´----*/
 /* -----------------------*/
 @media screen and (min-width: 1366px) {
-h1 {
-  bottom: 70px;
-}
-h2 {
-  margin-left: 240px;
-  top: 110px;
-}
+  h1 {
+    bottom: 70px;
+  }
+  h2 {
+    margin-left: 240px;
+    top: 110px;
+  }
 }
