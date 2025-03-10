@@ -1,0 +1,162 @@
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  data(): { currentYear: number } {
+    return {
+      currentYear: new Date().getFullYear(), // Hämta nuvarande år dynamiskt
+    };
+  },
+  computed: {
+    footerClass(): string {
+      return this.$route.path === '/' ? 'footer-dark-green' : 'footer-light-green';
+    },
+    isHomePage(): boolean {
+      return this.$route.path === '/';
+    },
+  },
+});
+</script>
+
+<template>
+  <footer :class="footerClass">
+    <section class="social-media-icons">
+      <img src="/assets/SVG/social_media_icons/spotify.svg" alt="Spotify icon" />
+      <img src="/assets/SVG/social_media_icons/instagram.svg" alt="Instagram icon" />
+      <img src="/assets/SVG/social_media_icons/facebook.svg" alt="Facebook icon" />
+      <img src="/assets/SVG/social_media_icons/twitter.svg" alt="Twitter icon" />
+    </section>
+    <section class="footer-info">
+      <a href="mailto:press@tylerthecreator.com">Press: press@tylerthecreator.com</a>
+      <p>&copy;copyright {{ currentYear }}</p>
+    </section>
+    <section class="flower">
+      <img
+        :class="{ 'show-flower-mobile': !isHomePage }"
+        class="flower-mobile"
+        src="/assets/SVG/footer-sunflower-mobile.svg"
+        alt="Yellow flower"
+      />
+      <img
+        class="flower-desktop"
+        src="/assets/SVG/page3_svg/footer-sunflower-desktop.svg"
+        alt="Yellow flower"
+      />
+    </section>
+  </footer>
+</template>
+
+<style scoped lang="scss">
+/* ----------------------*/
+/* ----`*~ MOBILE ~*´----*/
+/* ----------------------*/
+
+footer {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.footer-dark-green {
+  background-color: $bg-dark-green;
+}
+
+.footer-light-green {
+  background-color: $bg-light-green;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 35px;
+  margin: 20px;
+
+  img {
+    width: 45px;
+    height: auto;
+  }
+}
+
+.footer-info {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  a,
+  p {
+    font-weight: 400;
+    color: $font-primary;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 20px;
+  }
+}
+.flower-mobile {
+  display: none;
+}
+
+.show-flower-mobile {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-112px);
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.flower-desktop {
+  display: none;
+}
+
+/* ----------------------*/
+/* ----`*~ DESKTOP ~*´----*/
+/* ----------------------*/
+
+@media screen and (min-width: 1366px) {
+  footer {
+    height: 349px;
+    justify-content: center;
+  }
+
+  .social-media-icons {
+    gap: 70px;
+    margin-bottom: 20px;
+
+    img {
+      width: 70px;
+      height: auto;
+    }
+  }
+
+  a,
+  p {
+    font-size: 1.5rem;
+  }
+
+  .flower-mobile {
+    display: none;
+  }
+
+  .flower-desktop {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(31px);
+    clip-path: inset(0 0 31px 0);
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+</style>
