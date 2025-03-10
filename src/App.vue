@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router';
 import HelloWorld from './components/HelloWorld.vue';
 import MainFooter from './components/MainFooter.vue';
+
 </script>
 
 <template>
@@ -13,6 +14,13 @@ import MainFooter from './components/MainFooter.vue';
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
+    </div>
+
+    <div>
+      <PrimaryButton button-text="Köp biljetter" />
+      <AcceptButton buttonText="Accept" />
+      <DeclineButton buttonText="Decline" />
+      <ArrowButton />
     </div>
   </header>
 
