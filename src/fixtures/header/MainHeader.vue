@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router';
+</script>
+
 <template>
 <header class="header">
 <h1>FLOWER BOY</h1>
@@ -11,14 +15,18 @@
 
     <nav id="nav">
       <ul class="menu-list">
-        <li><a href="#page1">Home</a></li>
-        <li><a href="#page2">Tour</a></li>
-        <li><a href="#page3">Album</a></li>
-        <li><a href="#page4">Store</a></li>
+        <li><RouterLink to="/">Home</RouterLink></li>
+        <li><RouterLink to="/album">Album</RouterLink></li>
+        <li><RouterLink to="/tour">Tour</RouterLink></li>
+        <li><RouterLink to="/store">Store</RouterLink></li>
       </ul> 
     </nav>
   </div> 
 </header>
+
+<main>
+  <RouterView />
+</main>
 </template>
 
 <style scoped>
