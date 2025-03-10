@@ -26,7 +26,7 @@ const props = defineProps<{
   text-align: center;
 
   &:hover {
-    background-color: $bg-yellow;
+    background-color: $bg-red;
   }
 }
 </style>
