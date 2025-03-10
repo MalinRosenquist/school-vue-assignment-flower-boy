@@ -1,18 +1,23 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import AcceptButton from '../buttons/AcceptButton.vue';
 import DeclineButton from '../buttons/DeclineButton.vue';
 
+const showCookieBar = ref(true);
+
 const handleAccept = () => {
   console.log('Cookies accepted');
+  showCookieBar.value = false;
 };
 
 const handleDecline = () => {
   console.log('Cookies declined');
+  showCookieBar.value = false;
 };
 </script>
 
 <template>
-  <section class="cookie-bar">
+  <section v-if="showCookieBar" class="cookie-bar">
     <p class="cookie-bar-text">Do you want to allow cookies for a better experience?</p>
     <img
       class="img-cookie-bar"
