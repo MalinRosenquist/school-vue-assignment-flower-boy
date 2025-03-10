@@ -21,10 +21,10 @@ export default defineComponent({
 <template>
   <footer :class="footerClass">
     <section class="social-media-icons">
-      <img src="/assets/SVG/social_media_icons/spotify.svg" alt="Spotify icon" />
-      <img src="/assets/SVG/social_media_icons/instagram.svg" alt="Instagram icon" />
-      <img src="/assets/SVG/social_media_icons/facebook.svg" alt="Facebook icon" />
-      <img src="/assets/SVG/social_media_icons/twitter.svg" alt="Twitter icon" />
+      <img src="@/components/icons/spotify.svg" alt="Spotify icon" />
+      <img src="@/components/icons/instagram.svg" alt="Instagram icon" />
+      <img src="@/components/icons/facebook.svg" alt="Facebook icon" />
+      <img src="@/components/icons/twitter.svg" alt="Twitter icon" />
     </section>
     <section class="footer-info">
       <a href="mailto:press@tylerthecreator.com">Press: press@tylerthecreator.com</a>
