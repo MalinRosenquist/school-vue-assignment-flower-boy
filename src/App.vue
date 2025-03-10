@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
 import HelloWorld from './components/HelloWorld.vue';
-import AcceptButton from './components/buttons/AcceptButton.vue';
-import DeclineButton from './components/buttons/DeclineButton.vue';
-import PrimaryButton from './components/buttons/PrimaryButton.vue';
-import ArrowButton from './components/buttons/ArrowButton.vue';
+import MainFooter from './components/MainFooter.vue';
+
 </script>
 
 <template>
@@ -27,6 +25,8 @@ import ArrowButton from './components/buttons/ArrowButton.vue';
   </header>
 
   <RouterView />
+
+  <MainFooter />
 </template>
 
 <style scoped>
