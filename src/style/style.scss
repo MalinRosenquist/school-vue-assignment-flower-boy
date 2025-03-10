@@ -1,10 +1,24 @@
 @import 'variables';
 @import 'typography';
 
-h1 {
-  color: $font-tertiery;
+* {
+  box-sizing: border-box;
 }
 
-header {
-  background-color: $bg-dark-green;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: black;
+}
+
+/*
+.home-page {
+  min-height: 100vh;
+}
+*/
