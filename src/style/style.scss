@@ -5,10 +5,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
 h1 {
   color: black;
 }
 
-header {
-  
+/*
+.home-page {
+  min-height: 100vh;
 }
+*/
