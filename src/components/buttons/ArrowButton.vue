@@ -13,10 +13,13 @@
 .svg-arrow-btn {
   background: transparent;
   border: 0;
+  width: 4.25rem;
+  height: auto;
+  aspect-ratio: 71/39;
 
   svg {
-    width: 68px;
-    height: 35px;
+    width: 100%;
+    height: 100%;
     border: 0;
     cursor: pointer;
   }
