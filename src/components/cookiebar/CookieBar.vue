@@ -1,17 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import AcceptButton from '../buttons/AcceptButton.vue';
-import DeclineButton from '../buttons/DeclineButton.vue';
+import CookieButton from '../buttons/CookieButton.vue';
 
 const showCookieBar = ref(true);
 
 const handleAccept = () => {
-  console.log('Cookies accepted');
   showCookieBar.value = false;
 };
 
 const handleDecline = () => {
-  console.log('Cookies declined');
   showCookieBar.value = false;
 };
 </script>
@@ -27,8 +24,8 @@ const handleDecline = () => {
       width="83px"
     />
     <div class="cookie-bar-buttons">
-      <AcceptButton @click="handleAccept" buttonText="Accept" />
-      <DeclineButton @click="handleDecline" buttonText="Decline" />
+      <CookieButton @click="handleAccept" buttonText="Accept" buttonStyle="accept" />
+      <CookieButton @click="handleDecline" buttonText="Decline" buttonStyle="decline" />
     </div>
   </section>
 </template>
