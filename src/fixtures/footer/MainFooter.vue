@@ -1,19 +1,26 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, computed } from 'vue';
+import { useRoute } from 'vue-router';
 
 export default defineComponent({
-  data(): { currentYear: number } {
+  setup() {
+    const route = useRoute();
+
+    const currentYear = new Date().getFullYear();
+
+    const footerClass = computed(() => {
+      return route.path === '/' ? 'footer-dark-green' : 'footer-light-green';
+    });
+
+    const isHomePage = computed(() => {
+      return route.path === '/';
+    });
+
     return {
-      currentYear: new Date().getFullYear(), // Hämta nuvarande år dynamiskt
+      currentYear,
+      footerClass,
+      isHomePage,
     };
-  },
-  computed: {
-    footerClass(): string {
-      return this.$route.path === '/' ? 'footer-dark-green' : 'footer-light-green';
-    },
-    isHomePage(): boolean {
-      return this.$route.path === '/';
-    },
   },
 });
 </script>
@@ -21,10 +28,10 @@ export default defineComponent({
 <template>
   <footer :class="footerClass">
     <section class="social-media-icons">
-      <img src="@/components/icons/spotify.svg" alt="Spotify icon" />
-      <img src="@/components/icons/instagram.svg" alt="Instagram icon" />
-      <img src="@/components/icons/facebook.svg" alt="Facebook icon" />
-      <img src="@/components/icons/twitter.svg" alt="Twitter icon" />
+      <img src="/assets/SVG/social_media_icons/spotify.svg" alt="Spotify icon" />
+      <img src="/assets/SVG/social_media_icons/instagram.svg" alt="Instagram icon" />
+      <img src="/assets/SVG/social_media_icons/facebook.svg" alt="Facebook icon" />
+      <img src="/assets/SVG/social_media_icons/twitter.svg" alt="Twitter icon" />
     </section>
     <section class="footer-info">
       <a href="mailto:press@tylerthecreator.com">Press: press@tylerthecreator.com</a>
