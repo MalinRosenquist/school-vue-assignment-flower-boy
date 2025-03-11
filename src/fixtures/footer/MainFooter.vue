@@ -59,7 +59,7 @@ export default defineComponent({
 /* ----------------------*/
 
 footer {
-  height: 180px;
+  min-height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +129,7 @@ footer {
 
 @media screen and (min-width: 1366px) {
   footer {
-    height: 349px;
+    min-height: 349px;
     justify-content: center;
   }
 
