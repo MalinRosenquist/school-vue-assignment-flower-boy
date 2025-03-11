@@ -8,18 +8,27 @@ header {
   margin-top: 40px; 
   z-index: 2;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 .burgermenu {
   margin-top: 25px;
-  width: 35px;
-  height: 35px;
-  background: transparent;
+  width: 50px;
+  height: 50px;
   border: 0;
-  position: absolute;
+  padding: 0;
   right: 40px;
-  top: 40px;
+  top: 50px;
+  position: absolute;
+  background: transparent;
+  
   grid-column: 5;
   grid-row: 1;
   justify-self: right;
+
+  z-index: 3;
 }
 .burgermenu span {  
   display: block;
@@ -29,17 +38,92 @@ header {
   border-radius: 6px;
   margin-bottom: 10px;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-nav {
-  display: none;
+
+header input {
   grid-column: 5;
   grid-row: 1;
   justify-self: right;
+  position: absolute;
+  margin-right: 35px;
+  top: 60px;
+  z-index: 4;
+  width: 60px;
+  height: 50px;
+  opacity: 0;
 }
+input:checked + .menu span {
+  background-color: #fff;
+  position: absolute;
+  transition: all 0.4s ease-in-out;  
+}
+input:checked + .menu span:nth-child(2) {
+  opacity: 0;
+  transition: 0s ease-in-out;  
+}
+input:checked + .menu span:nth-child(1) {
+  transform: rotate(45deg);
+  bottom: 20px;
+}
+input:checked + .menu span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 20px;
+}
+
+nav {
+  grid-column: 5;
+  grid-row: 1;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $bg-purple;
+  width: 100vw;
+  height: 100vh;
+  translate: 100vw 0;
+  transition: all 0.5s ease-in-out;
+  
+  visibility: hidden;
+  z-index: 2;
+}
+input:checked + .menu nav {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  transition: all 0.3s ease-in-out;  
+  translate: 0vw 0;
+}
+
+nav ul {  
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 3;
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+
+  height: 100vh;
+  
+  a:link {
+    text-decoration: none;
+    color: #fff;
+  }
+  a:visited {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+
 h1 {
   margin-left: 5px;
   grid-column: 1 / span 4;
@@ -59,9 +143,6 @@ h2 { //TODO - Make sure the text changes depending on page
 /* ----`*~ TABLET ~*´----*/
 /* -----------------------*/
 @media screen and (min-width: 744px) {
-  .burgermenu {
-    right: 80px;
-  }
   h1 {
     bottom: 20px;
   }
@@ -70,7 +151,11 @@ h2 { //TODO - Make sure the text changes depending on page
     top: 90px;
     margin-left: 80px;
   }
+  nav ul {
+    font-size: 2rem;
+  }
 }
+
 
 /* -----------------------*/
 /* ----`*~ DESKTOP ~*´----*/
@@ -82,5 +167,13 @@ h2 { //TODO - Make sure the text changes depending on page
   h2 {
     margin-left: 240px;
     top: 110px;
+  }
+  nav {
+    width: 50vw;
+  }
+  nav ul {
+    font-size: 3rem;
+    text-align: start;
+    margin-left: 15vw;
   }
 }
