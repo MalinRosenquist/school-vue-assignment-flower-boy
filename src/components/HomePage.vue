@@ -3,7 +3,6 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 import desktopHero from '@/assets/hero-landing-page-desktop.svg';
 import mobileHero from '@/assets/hero-landing-page-mobile.svg';
-import ArrowButton from './buttons/ArrowButton.vue';
 
 const imageSrc = ref<string>(mobileHero);
 
@@ -32,7 +31,6 @@ onBeforeUnmount(() => {
       class="hero-image"
       alt="Illustraded image of a sunrise above a bed of sunflowers, with bees flying among the clouds. Tyler the Creator is depicted riding on top of one of the bees."
     />
-    <ArrowButton class="arrow-btn" />
   </section>
   <div class="wrapper">
     <section class="intro-text">
@@ -60,31 +58,15 @@ body {
   background-color: $bg-yellow;
 }
 
-//TODO: Change background color on arrow btn
-:not(body) {
-  background-color: $bg-dark-green;
-}
-
 .hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.hero-container {
-  position: relative;
-
-  .arrow-btn {
-    position: absolute;
-    top: 61%;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
-  }
-}
-
 .intro-text {
   color: $font-primary;
+  background-color: $bg-dark-green;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -112,18 +94,10 @@ body {
 /* ----------------------*/
 
 @media screen and (min-width: 1440px) {
-  //TODO: Få arrow btn på rätt plats.
-  .arrow-btn {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
-  }
-
   .wrapper {
     position: relative;
     height: 200px;
+    background-color: $bg-dark-green;
   }
   .intro-text {
     position: absolute;
