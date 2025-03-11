@@ -42,12 +42,12 @@ export default defineComponent({
         :class="{ 'show-flower-mobile': !isHomePage }"
         class="flower-mobile"
         src="/assets/SVG/footer-sunflower-mobile.svg"
-        alt="Yellow flower"
+        alt="Yellow sunflower"
       />
       <img
         class="flower-desktop"
         src="/assets/SVG/page3_svg/footer-sunflower-desktop.svg"
-        alt="Yellow flower"
+        alt="Yellow sunflower"
       />
     </section>
   </footer>
@@ -58,8 +58,10 @@ export default defineComponent({
 /* ----`*~ MOBILE ~*´----*/
 /* ----------------------*/
 
-footer {
+.footer-dark-green,
+.footer-light-green {
   min-height: 180px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,10 +129,16 @@ footer {
 /* ----`*~ DESKTOP ~*´----*/
 /* ----------------------*/
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1440px) {
   footer {
     min-height: 349px;
     justify-content: center;
+  }
+
+  .footer-dark-green,
+  .footer-light-green {
+    height: 500px;
+    overflow: hidden;
   }
 
   .social-media-icons {
@@ -143,6 +151,11 @@ footer {
     }
   }
 
+  .footer-info {
+    position: absolute;
+    bottom: 20px;
+  }
+
   a,
   p {
     font-size: 1.5rem;
@@ -150,6 +163,7 @@ footer {
 
   .flower-mobile {
     display: none;
+    overflow: hidden;
   }
 
   .flower-desktop {
@@ -158,11 +172,11 @@ footer {
     right: 0;
     bottom: 0;
     transform: translateY(31px);
-    clip-path: inset(0 0 31px 0);
 
     img {
       max-width: 100%;
       height: auto;
+      display: block;
     }
   }
 }
