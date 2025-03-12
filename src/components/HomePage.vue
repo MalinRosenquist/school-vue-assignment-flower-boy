@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-import desktopHero from '@/assets/hero-landing-page-desktop.svg';
-import mobileHero from '@/assets/hero-landing-page-mobile.svg';
+import AlbumMobile from './albumcover/AlbumMobile.vue';
+import AlbumDesktop from './albumcover/AlbumDesktop.vue';
 
-const imageSrc = ref<string>(mobileHero);
+const currentComponent = ref<typeof AlbumMobile | typeof AlbumDesktop>(AlbumMobile);
 
 const updateHero = () => {
   if (window.innerWidth <= 1440) {
-    imageSrc.value = mobileHero;
+    currentComponent.value = AlbumMobile;
   } else {
-    imageSrc.value = desktopHero;
+    currentComponent.value = AlbumDesktop;
   }
 };
 
@@ -26,10 +26,9 @@ onBeforeUnmount(() => {
 
 <template class="home-page">
   <section class="hero-container">
-    <img
-      :src="imageSrc"
-      class="hero-image"
-      alt="Illustraded image of a sunrise above a bed of sunflowers, with bees flying among the clouds. Tyler the Creator is depicted riding on top of one of the bees."
+    <component
+      :is="currentComponent"
+      alt="An illustrated image of a sunrise over a bed of sunflowers. Bees are flying among the clouds with Tyler riding on one of them"
     />
   </section>
   <div class="wrapper">
@@ -59,13 +58,8 @@ body {
 }
 
 .hero-container {
-  background: linear-gradient(to bottom, transparent 0%, $bg-dark-green 100%);
-}
-
-.hero-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background: linear-gradient(to bottom, transparent 0%, $bg-dark-green 100%);
 }
 
 .intro-text {
