@@ -11,8 +11,14 @@ html {
 
 body {
   margin: 0;
+  background-color: $bg-yellow;
 }
 
 h1 {
   color: black;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
