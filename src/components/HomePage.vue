@@ -53,7 +53,7 @@ onBeforeUnmount(() => {
   </section>
 </template>
 
-<style scopeed lang="scss">
+<style scoped lang="scss">
 body {
   background-color: $bg-yellow;
 }

@@ -33,17 +33,18 @@ const getH2 = (): string => {
         <span></span>
       </button>
 
-      <nav id="nav">
-        <ul class="menu-list" id="menu-list">
-          <li><RouterLink to="/">Home</RouterLink></li>
-          <li><RouterLink to="/album">Album</RouterLink></li>
-          <li><RouterLink to="/tour">Tour</RouterLink></li>
-          <li><RouterLink to="/store">Store</RouterLink></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <RouterView />
+    <nav id="nav">
+      <ul class="menu-list" id="menu-list">
+        <li><RouterLink to="/">Home</RouterLink></li>
+        <li><RouterLink to="/album">Album</RouterLink></li>
+        <li><RouterLink to="/tour">Tour</RouterLink></li>
+        <li><RouterLink to="/store">Store</RouterLink></li>
+      </ul> 
+    </nav>
+  </div> 
+</header>
+<RouterView />
+
 </template>
 
 <style scoped>
