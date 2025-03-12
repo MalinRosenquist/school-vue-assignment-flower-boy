@@ -78,11 +78,11 @@ export default defineComponent({
 
 .social-media-icons {
   display: flex;
-  gap: 35px;
+  gap: 5vw;
   margin: 20px;
 
   img {
-    width: 45px;
+    max-width: 45px;
     height: auto;
   }
 }

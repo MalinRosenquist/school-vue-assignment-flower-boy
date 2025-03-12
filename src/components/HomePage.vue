@@ -58,6 +58,10 @@ body {
   background-color: $bg-yellow;
 }
 
+.hero-container {
+  background: linear-gradient(to bottom, transparent 0%, $bg-dark-green 100%);
+}
+
 .hero-image {
   width: 100%;
   height: 100%;
@@ -87,6 +91,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  background-color: $bg-dark-green;
+
+  img {
+    max-width: 107px;
+  }
 }
 
 /* ----------------------*/
