@@ -51,6 +51,10 @@ header input {
   height: 50px;
   opacity: 0;
 }
+
+input:checked + .burgermenu {
+  position: fixed;
+}
 input:checked + .menu span {
   background-color: #fff;
   position: absolute;
@@ -78,6 +82,7 @@ nav {
   right: 0;
   background-color: $bg-purple;
   width: 100vw;
+  min-height: 530px;
   height: 100vh;
   translate: 100vw 0;
   transition: all 0.5s ease-in-out;
@@ -88,7 +93,7 @@ nav {
 input:checked + .menu nav {
   visibility: visible;
   opacity: 1;
-  position: absolute;
+  position: fixed;
   transition: all 0.3s ease-in-out;  
   translate: 0vw 0;
 }
