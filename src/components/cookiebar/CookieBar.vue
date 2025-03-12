@@ -19,7 +19,7 @@ const handleDecline = () => {
     <img
       class="img-cookie-bar"
       src="@/assets/bee.svg"
-      alt="En illustration av ett bi, med sina karakteristiska svart-gula ränder och vingar."
+      alt="An illustration of a bee, with its characteristic black and yellow stripes and wings."
       height="114px"
       width="83px"
     />
