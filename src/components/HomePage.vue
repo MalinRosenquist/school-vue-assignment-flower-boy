@@ -53,10 +53,6 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped lang="scss">
-body {
-  background-color: $bg-yellow;
-}
-
 .hero-container {
   width: 100%;
   background: linear-gradient(to bottom, transparent 0%, $bg-dark-green 100%);
