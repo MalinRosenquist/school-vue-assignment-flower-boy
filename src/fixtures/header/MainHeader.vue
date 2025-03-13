@@ -24,27 +24,31 @@ const getH2 = (): string => {
     <h1>FLOWER BOY</h1>
     <h2>{{ getH2() }}</h2>
 
-    <input type="checkbox" />
+    <input type="checkbox" aria-label="Toggle navigation menu" />
 
     <div class="menu">
-      <button class="burgermenu" id="burgermenu" onclick="burgerMenuFunctionality()">
+      <button
+        aria-label="Menu button"
+        class="burgermenu"
+        id="burgermenu"
+        onclick="burgerMenuFunctionality()"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-    <nav id="nav">
-      <ul class="menu-list" id="menu-list">
-        <li><RouterLink to="/">Home</RouterLink></li>
-        <li><RouterLink to="/album">Album</RouterLink></li>
-        <li><RouterLink to="/tour">Tour</RouterLink></li>
-        <li><RouterLink to="/store">Store</RouterLink></li>
-      </ul> 
-    </nav>
-  </div> 
-</header>
-<RouterView />
-
+      <nav id="nav" role="navigation" aria-label="Main menu">
+        <ul class="menu-list" id="menu-list" aria-label="Navigation list">
+          <li><RouterLink to="/">Home</RouterLink></li>
+          <li><RouterLink to="/album">Album</RouterLink></li>
+          <li><RouterLink to="/tour">Tour</RouterLink></li>
+          <li><RouterLink to="/store">Store</RouterLink></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <RouterView />
 </template>
 
 <style scoped>
