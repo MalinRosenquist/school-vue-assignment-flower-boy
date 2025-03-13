@@ -1,27 +1,17 @@
-<script lang="ts">
-import { defineComponent, computed } from 'vue';
+<script setup lang="ts">
+import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
-export default defineComponent({
-  setup() {
-    const route = useRoute();
+const route = useRoute();
 
-    const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
 
-    const footerClass = computed(() => {
-      return route.path === '/' ? 'footer-dark-green' : 'footer-light-green';
-    });
+const footerClass = computed(() => {
+  return route.path === '/' ? 'footer-dark-green' : 'footer-light-green';
+});
 
-    const isHomePage = computed(() => {
-      return route.path === '/';
-    });
-
-    return {
-      currentYear,
-      footerClass,
-      isHomePage,
-    };
-  },
+const isHomePage = computed(() => {
+  return route.path === '/';
 });
 </script>
 
@@ -34,7 +24,11 @@ export default defineComponent({
       <img src="@/components/icons/twitter.svg" alt="Twitter icon" />
     </section>
     <section class="footer-info">
-      <a href="mailto:press@tylerthecreator.com">Press: press@tylerthecreator.com</a>
+      <a
+        href="mailto:press@tylerthecreator.com"
+        aria-label="Click to send an email to press@tylerthecreator.com"
+        >Press: press@tylerthecreator.com</a
+      >
       <p>&copy;copyright {{ currentYear }}</p>
     </section>
     <section class="flower">
