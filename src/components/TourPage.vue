@@ -356,7 +356,40 @@ ul {
 /* ----`*~ TABLET ~*´----*/
 /* ----------------------*/
 @media screen and (min-width: 744px) {
-  
+
+    .small-clouds-container {
+
+    img {
+      object-fit: cover;
+      width: 50vw;
+    }
+    .cloud-1 {
+      grid-column: 1 / span 3;
+      grid-row: 1;
+      width: 40vw;
+    }
+    .cloud-2 {
+      grid-column: 9 / span 3;
+      grid-row: 2; 
+    }
+    .cloud-3 {
+      grid-column: 1 / span 3;
+      grid-row: 4;
+    }
+    .cloud-4 {
+      grid-column: 9 / span 3;
+      grid-row: 8;
+    }
+    .cloud-5 {
+      grid-column: 1 / span 3;
+      grid-row: 9;
+    }
+    .cloud-6 {
+      grid-column: 9 / span 3;
+      grid-row: 10 / span 2;
+      width: 50vw;
+    }
+  }
   .page3-top-imgs {
     margin-top: 50px;
     margin-bottom: 20vh;
@@ -368,11 +401,11 @@ ul {
       max-height: 500px;
     }
     .top-img-lp-record-container {
-      position: relative;      
+      //position: relative;      
     }
     .top-img-flower-container {
       z-index: 1;
-      position: absolute;
+      //position: absolute;
       top: 300px;
     }
     .lp-text {
@@ -415,7 +448,7 @@ ul {
     transition: all 0.3s ease-in-out;  
   }
   .big-cloud-container {
-    //display: inherit;
+    position: relative;
     visibility: visible;
     opacity: 1;
     transition: all 0.3s ease-in-out;  
@@ -423,11 +456,12 @@ ul {
         max-width: 96vw;
         min-width: 300px;
       }
-    }
+  }
 
   .tour-list-text {
-  display: flex;
-  justify-content: center;
+    
+    display: flex;
+    justify-content: center;
 
     .tour-date {
       grid-column: 2;
@@ -461,8 +495,9 @@ ul {
     position: static;
 
     .tour-list-text {
-      position: static;
+      //position: static;
       transform: none;
+      z-index: 2;
     }
     .ticket-button {
       position: static;
@@ -495,7 +530,7 @@ ul {
       text-align: center;
       position: absolute;
       top: 10%;
-      left: 565px;
+      left: 650px;
       h2, h3 {
         max-width: 500px;
         max-height: 500px;
@@ -514,37 +549,4 @@ ul {
   }
     
 }
-
-
-/*
-.lp-arrow-container {
-  //margin-top: 25px;
-  width: 50px;
-  height: 50px;
-  border: 0;
-  padding: 0;
-  position: absolute;
-  background: transparent;
-
-  z-index: 2;
-}
-.lp-arrow span {
-  display: block;
-  width: 50px;
-  height: 5px;
-  background-color: #fff;
-  border-radius: 6px;
-  margin-bottom: 10px;
-
-}
-
--------------------
-  <button class="ticket-button">
-    <PrimaryButton buttonText="Get your tickets here"/>
-  </button>
-
-<ArrowButton />
-
-*/
-
 </style>
