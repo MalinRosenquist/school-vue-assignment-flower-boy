@@ -37,13 +37,14 @@ onMounted(() => {
 
 <template>
   <svg
+    version="1.1"
+    id="svg565"
     role="img"
+    aria-labelledby="svg565Title svg565Desc"
     fill="none"
     viewBox="0 211.264402 1440 1315.6999999999998"
     width="1440"
     height="1315.6999999999998"
-    version="1.1"
-    id="svg565"
     sodipodi:docname="background-landning-page.svg"
     inkscape:version="1.4 (86a8ad7, 2024-10-11)"
     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -51,6 +52,11 @@ onMounted(() => {
     xmlns="http://www.w3.org/2000/svg"
     xmlns:svg="http://www.w3.org/2000/svg"
   >
+    <title id="svg565Title">Flower Boy album cover artwork</title>
+    <desc id="svg565Desc">
+      An illustrated image of a sunrise over a bed of sunflowers. Bees are flying among the clouds
+      with Tyler riding on one of them that is slightly moving back and forth
+    </desc>
     <sodipodi:namedview
       id="namedview565"
       pagecolor="#ffffff"
@@ -70,6 +76,7 @@ onMounted(() => {
       inkscape:window-maximized="1"
       inkscape:current-layer="g565"
     />
+
     <g clip-path="url(#clip0_87_628)" id="g565">
       <path
         fill="#FBBE38"
