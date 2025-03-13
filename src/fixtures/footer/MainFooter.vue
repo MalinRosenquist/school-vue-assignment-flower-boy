@@ -35,12 +35,12 @@ const isHomePage = computed(() => {
       <img
         :class="{ 'show-flower-mobile': !isHomePage }"
         class="flower-mobile"
-        src="/assets/SVG/footer-sunflower-mobile.svg"
+        src="@/assets/footer-sunflower-mobile.svg"
         alt="Yellow sunflower"
       />
       <img
         class="flower-desktop"
-        src="/assets/SVG/page3_svg/footer-sunflower-desktop.svg"
+        src="@/assets/footer-sunflower-desktop.svg"
         alt="Yellow sunflower"
       />
     </section>
