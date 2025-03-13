@@ -22,6 +22,10 @@
     height: 100%;
     border: 0;
     cursor: pointer;
+
+    line {
+      stroke: $font-secondary;
+    }
   }
 
   &:hover svg line {
@@ -30,6 +34,16 @@
 
   &:active svg line {
     stroke: $bg-red;
+  }
+}
+
+/* ----------------------*/
+/* ----`*~ DESKTOP ~*´---*/
+/* ----------------------*/
+
+@media screen and (min-width: 1440px) {
+  .svg-arrow-btn svg line {
+    stroke: $font-primary;
   }
 }
 </style>

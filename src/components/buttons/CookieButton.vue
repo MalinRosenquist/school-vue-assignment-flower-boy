@@ -31,6 +31,7 @@ button {
 
   &:hover {
     background-color: $bg-yellow;
+    color: $font-secondary;
   }
 }
 
@@ -39,6 +40,7 @@ button {
 
   &:hover {
     background-color: $bg-red;
+    color: $font-secondary;
   }
 }
 </style>
