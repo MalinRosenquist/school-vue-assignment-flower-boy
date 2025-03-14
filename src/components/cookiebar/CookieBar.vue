@@ -4,13 +4,13 @@ import CookieButton from '../buttons/CookieButton.vue';
 
 const showCookieBar = ref(true);
 
-const handleAccept = () => {
+function handleAccept() {
   showCookieBar.value = false;
-};
+}
 
-const handleDecline = () => {
+function handleDecline() {
   showCookieBar.value = false;
-};
+}
 </script>
 
 <template>
@@ -46,6 +46,7 @@ const handleDecline = () => {
   padding: 15px;
   text-align: center;
   padding: 60px 10px;
+  z-index: 2;
 
   .cookie-bar-text {
     font-size: 1.25rem;
