@@ -2,6 +2,7 @@
 
 This is a project that was developed during our course "Graphical tools for interface design" - where we took a deep dive into designing a webpage from scratch and then handing it over to another group for them to develop. 
 As such we of course recieved a design from another group as well - which is the project you are currently looking at.
+
 This project took inspiration from the album cover of Flower Boy, and the focus is on a fun and playful design that is still responsive and has good accessability. 
 
 
@@ -59,7 +60,7 @@ Our project features:
 ![Cookie bar - Mobile](assets/screenshots/cookiebar-mobile.png)
 
 
-## 🌟 Features <!--Features of the project-->
+## 🌟 Features 
 
 
 - **Responsive Design**: The page adapts to all screen sizes, ensuring a smooth experience across devices.
@@ -80,13 +81,14 @@ The application is divided into two main sections:
  - Includes a hamburgermenu with clear options. 
 
 **2. Tour Page**: 
-- Displays the date of the tour, as well as a link to get to the "Buy Tickets Here" button. 
+- Displays the dates of the tour, as well as a link to get to the "Buy Tickets Here" button. 
 - Features a list of the full tour. The list adapts to different screensizes. 
 - Includes a clickable button where the user can easily buy tour tickets. 
 
 
-## 💻 Tech Stack <!-- Techstack + tools for the project = What has been used in the making of it all -->
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) <!-- Made with https://shields.io/ , check how & then update-->
+## 💻 Tech Stack 
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
@@ -110,26 +112,21 @@ The application is divided into two main sections:
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white)
 
 
-## 🔍 Validation & Lighthouse analysis <!-- Info & screenshots of the validations. Example for link: (public/screenshots/HTMLValidation.png), link to the img files in the project. -->
+## 🔍 Validation & Lighthouse analysis 
 
 **HTML Validation**
-![HTML Validation]()
+![HTML Validation](validation/html-validation.png)
 
-**Lighthouse report**
-![Lighthouse report]()
+**CSS Validation**
+![CSS Validation](validation/css-validation.png)
+
+**Lighthouse analysis**
+![Lighthouse analysis](validation/lighthouse-analysis.JPG)
 
 The site has been validated using W3C tools to ensure compliance with proper HTML5, CSS3, and ARIA standards.
 
 A Lighthouse analysis was performed to optimize the application’s performance, accessibility, and SEO. Based on the results, improvements were made to enhance loading speed, accessibility for all users, and search engine visibility, contributing to a smoother and more user-friendly experience. 
 
-<!--EXAMPLE 
-
-**HTML Validation**
-![HTML Validation](public/screenshots/HTMLValidation.png)
-
-**Lighthouse report**
-![Lighthouse report](public/screenshots/lighthouseEstelle.png)
--->
 
 ## 📃 Original information provided by team Kungskobrorna 
 
