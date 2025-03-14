@@ -211,16 +211,6 @@ When the down arrow is pressed there should be a smooth scroll down to the next 
 We took inspiration from the album cover of Flower Boy. We wanted to make a playful digital version of the album cover but in a more cartoonish style that feels alive. All the following design choices were made with this in mind. Based on that we have choosen a colourful palette that takes the user on a journey through the album. The font-style that we have choosen is a combination of the original font that is used on the album but with a more playful vibe. We have tried to keep the same style on all the buttons to ensure a coherent design across the pages.
 
 
-## 🎯 Learning Journey 
-
--To be added-
-
-### Category 1
-
-
-### Category 2 
-
-
 ## ✍️ Authors 
 Created by: 
 - [Lenita Dahlin](https://github.com/LDMI-24)
