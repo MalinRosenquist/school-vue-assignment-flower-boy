@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/fed24d-grafiska-verktyg-dabbagam/',
+  base: '/school-vue-assignment-flower-boy/',
   plugins: [vue(), vueDevTools()],
   resolve: {
     alias: {
