@@ -5,7 +5,7 @@ header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2);
-  margin-top: 40px; 
+  margin-top: 40px;
   z-index: 2;
   //position: fixed;
 }
@@ -24,14 +24,14 @@ ul {
   top: 50px;
   position: absolute;
   background: transparent;
-  
+
   grid-column: 5;
   grid-row: 1;
   justify-self: right;
 
   z-index: 3;
 }
-.burgermenu span {  
+.burgermenu span {
   display: block;
   width: 50px;
   height: 5px;
@@ -59,11 +59,11 @@ input:checked + .burgermenu {
 input:checked + .menu span {
   background-color: #fff;
   position: absolute;
-  transition: all 0.4s ease-in-out;  
+  transition: all 0.4s ease-in-out;
 }
 input:checked + .menu span:nth-child(2) {
   opacity: 0;
-  transition: 0s ease-in-out;  
+  transition: 0s ease-in-out;
 }
 input:checked + .menu span:nth-child(1) {
   transform: rotate(45deg);
@@ -87,7 +87,7 @@ nav {
   height: 100vh;
   translate: 100vw 0;
   transition: all 0.5s ease-in-out;
-  
+
   visibility: hidden;
   z-index: 2;
 }
@@ -95,12 +95,12 @@ input:checked + .menu nav {
   visibility: visible;
   opacity: 1;
   position: fixed;
-  transition: all 0.3s ease-in-out;  
+  transition: all 0.3s ease-in-out;
   translate: 0vw 0;
 }
 
-nav ul {  
-  font-family: "Rubik Mono One", monospace;
+nav ul {
+  font-family: 'Rubik Mono One', monospace;
   font-weight: 400;
   font-style: normal;
   line-height: 3;
@@ -113,7 +113,7 @@ nav ul {
   flex-wrap: nowrap;
 
   height: 100vh;
-  
+
   a:link {
     text-decoration: none;
     color: #fff;
@@ -129,14 +129,14 @@ nav ul {
   }
 }
 
-
 h1 {
   margin-left: 5px;
   grid-column: 1 / span 4;
   grid-row: 1;
   position: relative;
 }
-h2 { //TODO - Make sure the text changes depending on page
+h2 {
+  //TODO - Make sure the text changes depending on page
   grid-column: 1 / span 3;
   grid-row: 2;
   margin-left: 40px;
@@ -161,7 +161,6 @@ h2 { //TODO - Make sure the text changes depending on page
     font-size: 2rem;
   }
 }
-
 
 /* -----------------------*/
 /* ----`*~ DESKTOP ~*´----*/

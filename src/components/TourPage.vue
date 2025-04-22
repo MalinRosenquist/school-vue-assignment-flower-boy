@@ -4,7 +4,6 @@ import ArrowButton from './buttons/ArrowButton.vue';
 
 <template class="tour-page">
   <div class="page3-top-imgs">
-
     <section class="top-img-flower-container">
       <img
         src="@/assets/page3_svg/tyler-flower-face.svg"
@@ -14,11 +13,11 @@ import ArrowButton from './buttons/ArrowButton.vue';
     </section>
 
     <section class="top-img-lp-record-container">
-        <img
-          src="@/assets/page3_svg/lp-record.svg"
-          class="lp-record"
-          alt="Illustration of a black LP record"
-        />
+      <img
+        src="@/assets/page3_svg/lp-record.svg"
+        class="lp-record"
+        alt="Illustration of a black LP record"
+      />
     </section>
 
     <div class="lp-text">
@@ -33,132 +32,129 @@ import ArrowButton from './buttons/ArrowButton.vue';
     </div>
   </div>
 
-    <section class="small-clouds-container">
-      <img
-        src="@/assets/page3_svg/page3_mobile_clouds/cloud-1.svg"
-        class="cloud-1"
-        alt="Illustrated image of a small cloud."
-      />
-      <img
-        src="@/assets/page3_svg/page3_mobile_clouds/cloud-2.svg"
-        class="cloud-2"
-        alt="Illustrated image of a small cloud."
-      />
-      <img
-        src="@/assets/page3_svg/page3_mobile_clouds/cloud-3.svg"
-        class="cloud-3"
-        alt="Illustrated image of a small cloud."
-      />
-      <img
-        src="@/assets/page3_svg/page3_mobile_clouds/cloud-4.svg"
-        class="cloud-4"
-        alt="Illustrated image of a small cloud."
-      />
-      <img
-        src="@/assets/page3_svg/page3_mobile_clouds/cloud-5.svg"
-        class="cloud-5"
-        alt="Illustrated image of a small cloud."
-      />
-      <img
-        src="@/assets/page3_svg/page3_mobile_clouds/cloud-6.svg"
-        class="cloud-6"
-        alt="Illustrated image of a small cloud."
-      />
-    </section>
+  <section class="small-clouds-container">
+    <img
+      src="@/assets/page3_svg/page3_mobile_clouds/cloud-1.svg"
+      class="cloud-1"
+      alt="Illustrated image of a small cloud."
+    />
+    <img
+      src="@/assets/page3_svg/page3_mobile_clouds/cloud-2.svg"
+      class="cloud-2"
+      alt="Illustrated image of a small cloud."
+    />
+    <img
+      src="@/assets/page3_svg/page3_mobile_clouds/cloud-3.svg"
+      class="cloud-3"
+      alt="Illustrated image of a small cloud."
+    />
+    <img
+      src="@/assets/page3_svg/page3_mobile_clouds/cloud-4.svg"
+      class="cloud-4"
+      alt="Illustrated image of a small cloud."
+    />
+    <img
+      src="@/assets/page3_svg/page3_mobile_clouds/cloud-5.svg"
+      class="cloud-5"
+      alt="Illustrated image of a small cloud."
+    />
+    <img
+      src="@/assets/page3_svg/page3_mobile_clouds/cloud-6.svg"
+      class="cloud-6"
+      alt="Illustrated image of a small cloud."
+    />
+  </section>
 
-    <div class="tour-info-container">
-      <h5 class="tour-list-text">
-        <ul class="tour-date">
-          <li>1/26</li>
-          <li>1/27</li>
-          <li>1/29</li>
-          <li>1/30</li>
-          <li>2/2</li>
-          <li>2/3</li>
-          <li>2/6</li>
-          <li>2/7</li>
-          <li>2/8</li>
-          <li>2/10</li>
-          <li>2/12</li>
-          <li>2/13</li>
-          <li>2/15</li>
-          <li>2/17</li>
-          <li>2/18</li>
-          <li>2/20</li>
-          <li>2/21</li>
-          <li>2/23</li>
-          <li>2/25</li>
-          <li>2/27</li>
-          <li>3/1</li>
-          <li>3/2</li>
-          <li>3/4</li>
-        </ul>
-        <ul class="tour-city">
-          <li>VANCOUVER</li>
-          <li>PORTLAND</li>
-          <li>SF</li>
-          <li>SACRAMENTO</li>
-          <li>SAN DIEGO</li>
-          <li>TEMPE</li>
-          <li>DENVER</li>
-          <li>KANSAS CITY</li>
-          <li>DALLAS</li>
-          <li>ATLANTA</li>
-          <li>MIAMI</li>
-          <li>ORLANDO</li>
-          <li>PHILLY</li>
-          <li>TORONTO</li>
-          <li>MONTREAL</li>
-          <li>PITTSBURGH</li>
-          <li>ROCHESTER</li>
-          <li>NYC</li>
-          <li>DC</li>
-          <li>DETROIT</li>
-          <li>MADISON</li>
-          <li>CHICAGO</li>
-          <li>MILWAUKEE</li>
-        </ul>
-        <ul class="tour-venue">
-          <li>PNE FORUM</li>
-          <li>MEMORIAL COLISEUM</li>
-          <li>THE ARMORY</li>
-          <li>MEMORIAL AUDITORIUM</li>
-          <li>VALLEY VIEW CASINO CENTER</li>
-          <li>MARQUEE THEATRE</li>
-          <li>1STBANK CENTER</li>
-          <li>ARVEST BANK THEATRE</li>
-          <li>BOMB FACTORY</li>
-          <li>WORLD CONGRESS CENTER</li>
-          <li>JAMES L. KNIGHT CENTER</li>
-          <li>ORLANDO AMPHITHEATRE</li>
-          <li>LIACOURAS CENTER</li>
-          <li>RICOH COLISEUM</li>
-          <li>MTELUS</li>
-          <li>STAGE AE</li>
-          <li>MAIN STREET ARMORY</li>
-          <li>THE THEATER AT MSG</li>
-          <li>THE ANTHEM</li>
-          <li>TEMPLE THEATRE</li>
-          <li>ALLIANT ENERGY CENTER</li>
-          <li>ARAGON BALLROOM</li>
-          <li>EAGLES BALLROOM</li>
-        </ul>
-      </h5>
-      <section class="big-cloud-container">
+  <div class="tour-info-container">
+    <h5 class="tour-list-text">
+      <ul class="tour-date">
+        <li>1/26</li>
+        <li>1/27</li>
+        <li>1/29</li>
+        <li>1/30</li>
+        <li>2/2</li>
+        <li>2/3</li>
+        <li>2/6</li>
+        <li>2/7</li>
+        <li>2/8</li>
+        <li>2/10</li>
+        <li>2/12</li>
+        <li>2/13</li>
+        <li>2/15</li>
+        <li>2/17</li>
+        <li>2/18</li>
+        <li>2/20</li>
+        <li>2/21</li>
+        <li>2/23</li>
+        <li>2/25</li>
+        <li>2/27</li>
+        <li>3/1</li>
+        <li>3/2</li>
+        <li>3/4</li>
+      </ul>
+      <ul class="tour-city">
+        <li>VANCOUVER</li>
+        <li>PORTLAND</li>
+        <li>SF</li>
+        <li>SACRAMENTO</li>
+        <li>SAN DIEGO</li>
+        <li>TEMPE</li>
+        <li>DENVER</li>
+        <li>KANSAS CITY</li>
+        <li>DALLAS</li>
+        <li>ATLANTA</li>
+        <li>MIAMI</li>
+        <li>ORLANDO</li>
+        <li>PHILLY</li>
+        <li>TORONTO</li>
+        <li>MONTREAL</li>
+        <li>PITTSBURGH</li>
+        <li>ROCHESTER</li>
+        <li>NYC</li>
+        <li>DC</li>
+        <li>DETROIT</li>
+        <li>MADISON</li>
+        <li>CHICAGO</li>
+        <li>MILWAUKEE</li>
+      </ul>
+      <ul class="tour-venue">
+        <li>PNE FORUM</li>
+        <li>MEMORIAL COLISEUM</li>
+        <li>THE ARMORY</li>
+        <li>MEMORIAL AUDITORIUM</li>
+        <li>VALLEY VIEW CASINO CENTER</li>
+        <li>MARQUEE THEATRE</li>
+        <li>1STBANK CENTER</li>
+        <li>ARVEST BANK THEATRE</li>
+        <li>BOMB FACTORY</li>
+        <li>WORLD CONGRESS CENTER</li>
+        <li>JAMES L. KNIGHT CENTER</li>
+        <li>ORLANDO AMPHITHEATRE</li>
+        <li>LIACOURAS CENTER</li>
+        <li>RICOH COLISEUM</li>
+        <li>MTELUS</li>
+        <li>STAGE AE</li>
+        <li>MAIN STREET ARMORY</li>
+        <li>THE THEATER AT MSG</li>
+        <li>THE ANTHEM</li>
+        <li>TEMPLE THEATRE</li>
+        <li>ALLIANT ENERGY CENTER</li>
+        <li>ARAGON BALLROOM</li>
+        <li>EAGLES BALLROOM</li>
+      </ul>
+    </h5>
+    <section class="big-cloud-container">
       <img
         src="@/assets/page3_svg/cloud-with-bee.svg"
         class="bee-image"
         alt="Illustrated image of a big cloud."
       />
-      </section>
-      <button class="ticket-button">
-        Get your tickets here
-      </button>
-    </div>
+    </section>
+    <button class="ticket-button">Get your tickets here</button>
+  </div>
 </template>
 
 <style scoped lang="scss">
-
 body {
   background-color: $bg-light-blue;
 }
@@ -168,13 +164,13 @@ body {
 /* ----------------------*/
 .small-clouds-container {
   position: relative;
-  
+
   z-index: -1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  transition: all 0.3s ease-in-out; 
-  top: 200px; 
+  transition: all 0.3s ease-in-out;
+  top: 200px;
   img {
     object-fit: cover;
     width: 50vw;
@@ -186,7 +182,7 @@ body {
   }
   .cloud-2 {
     grid-column: 9 / span 3;
-    grid-row: 2; 
+    grid-row: 2;
   }
   .cloud-3 {
     grid-column: 1 / span 3;
@@ -209,7 +205,7 @@ body {
 .big-cloud-container {
   display: none;
   visibility: hidden;
-  opacity: 0; 
+  opacity: 0;
   transition: all 0.3s ease-in-out;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -307,58 +303,57 @@ ul {
   transform: translateY(4px);
 }
 .page3-top-imgs {
-    margin-top: 50px;
-    margin-bottom: 20vh;
-    position: relative;
-    margin-left: 28vw;
+  margin-top: 50px;
+  margin-bottom: 20vh;
+  position: relative;
+  margin-left: 28vw;
 
-    img {
+  img {
+    max-width: 250px;
+    max-height: 500px;
+  }
+  .top-img-lp-record-container {
+    position: relative;
+  }
+  .top-img-flower-container {
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+  }
+  .lp-text {
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    h2,
+    h3 {
+      max-width: 250px;
+      max-height: 400px;
+    }
+    h3 {
+      margin-top: 70px;
+    }
+    p {
+      color: #000;
+      margin-top: 35vh;
+    }
+    .lp-arrow {
+      margin-top: 40px;
+    }
+    p,
+    .lp-arrow {
       max-width: 250px;
       max-height: 500px;
     }
-    .top-img-lp-record-container {
-      position: relative;      
-    }
-    .top-img-flower-container {
-      z-index: 1;
-      position: absolute;
-      top: 200px;
-    }
-    .lp-text {
-      text-align: center;
-      position: absolute;
-      top: 40px;
-      bottom: 0;
-      left: 0;
-      h2, h3 {
-        max-width: 250px;
-        max-height: 400px;
-      }
-      h3 {
-        margin-top: 70px;
-      }
-      p {      
-        color: #000;
-        margin-top: 35vh;
-      }
-      .lp-arrow {
-        margin-top: 40px;
-      }
-      p, .lp-arrow {
-        
-        max-width: 250px;
-        max-height: 500px;
-      }
-    }
   }
+}
 
 /* ----------------------*/
 /* ----`*~ TABLET ~*´----*/
 /* ----------------------*/
 @media screen and (min-width: 744px) {
-
-    .small-clouds-container {
-
+  .small-clouds-container {
     img {
       object-fit: cover;
       width: 50vw;
@@ -370,7 +365,7 @@ ul {
     }
     .cloud-2 {
       grid-column: 9 / span 3;
-      grid-row: 2; 
+      grid-row: 2;
     }
     .cloud-3 {
       grid-column: 1 / span 3;
@@ -401,7 +396,7 @@ ul {
       max-height: 500px;
     }
     .top-img-lp-record-container {
-      //position: relative;      
+      //position: relative;
     }
     .top-img-flower-container {
       z-index: 1;
@@ -414,7 +409,8 @@ ul {
       top: 40px;
       bottom: 0;
       left: 50px;
-      h2, h3 {
+      h2,
+      h3 {
         font-size: 2rem;
         max-width: 300px;
         max-height: 500px;
@@ -428,12 +424,13 @@ ul {
       .lp-arrow {
         margin-top: 40px;
       }
-      p, .lp-arrow {
+      p,
+      .lp-arrow {
         max-width: 300px;
         max-height: 500px;
       }
     }
-  } 
+  }
 }
 
 /* -----------------------*/
@@ -445,21 +442,20 @@ ul {
     visibility: hidden;
     display: none;
     opacity: 0;
-    transition: all 0.3s ease-in-out;  
+    transition: all 0.3s ease-in-out;
   }
   .big-cloud-container {
     position: relative;
     visibility: visible;
     opacity: 1;
-    transition: all 0.3s ease-in-out;  
-      img {
-        max-width: 96vw;
-        min-width: 300px;
-      }
+    transition: all 0.3s ease-in-out;
+    img {
+      max-width: 96vw;
+      min-width: 300px;
+    }
   }
 
   .tour-list-text {
-    
     display: flex;
     justify-content: center;
 
@@ -489,7 +485,6 @@ ul {
     font-size: 1.25rem;
     font-weight: 700;
     top: 0;
-    
   }
   .tour-info-container {
     position: static;
@@ -531,7 +526,8 @@ ul {
       position: absolute;
       top: 10%;
       left: 650px;
-      h2, h3 {
+      h2,
+      h3 {
         max-width: 500px;
         max-height: 500px;
       }
@@ -547,6 +543,5 @@ ul {
       }
     }
   }
-    
 }
 </style>
